@@ -1,0 +1,649 @@
+* {
+  font-weight: 300;
+}
+
+.body {
+  display: block !important;
+}
+
+.container body {
+  position: relative;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 300;
+  background-color: slategrey;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  text-align: center;
+  z-index: 8;
+}
+
+.container h1 {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.container input {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+}
+
+.container select {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+}
+
+.container label {
+  max-width: 250px;
+  border-radius: 3px;
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  display: flex;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  cursor: pointer;
+  display: block;
+}
+
+.container ul {
+  list-style: none;
+}
+
+.container li {
+  display: block;
+}
+
+.container input[type='radio'] {
+  visibility: hidden;
+}
+
+.container input[type='radio']:checked + label {
+  background: rgba(151, 107, 107, 0.4);
+}
+
+.input {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+}
+
+.HalfCustom {
+  width: 125px;
+  display: inline;
+}
+
+button {
+  appearance: none;
+  outline: 0;
+  background-color: black;
+  border: 0;
+  padding: 10px 15px;
+  color: #50a3a2;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 18px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  /* background-color: dodgerblue; */
+  padding: 10px;
+  flex: 33%;
+}
+
+.flex-item-center {
+  /* background-color: dodgerblue; */
+  padding: 10px;
+  flex: 33%;
+}
+
+.flex-item-right {
+  /* background-color: dodgerblue; */
+  padding: 10px;
+  flex: 33%;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #72ad90;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+
+@media (max-width: 800px) {
+  .flex-item-right,
+  .flex-item-left,
+  .flex-item-center {
+    flex: 100%;
+  }
+}
+
+/* sidebar new sfdr */
+
+.sidebar {
+  margin: 0 0 150px 0;
+  padding: 0;
+  width: 170px;
+  position: fixed;
+  top: 8.5%;
+  height: 100%;
+  overflow: auto;
+  z-index: 8;
+}
+
+.links {
+  display: block;
+  color: #f1f1f1;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.linksactive {
+  background-color: #e48900;
+  color: white;
+}
+
+div.content {
+  margin-left: 170px;
+  background-color: red;
+}
+
+@media screen and (max-width: 700px) {
+  /* .sidebar {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:8.5%;
+  }
+  .links {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .links {
+    text-align: center;
+    float: none;
+  } */
+}
+
+/* .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+} */
+
+/* Tablesss  new */
+
+.yo {
+  border-bottom: 1px solid #dddddd;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.yo Thead Tr {
+  background-color: #151515;
+  color: #ffffff;
+  text-align: left;
+  font-size: 1rem;
+  height: 35px;
+}
+
+.yo Tbody Tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* body > #zmmtg-root {
+    display: none !important;
+  }
+  
+  #zmmtg-root, .meeting-client, .meeting-client-inner {
+    width: 100% !important;
+    height: 100% !important;
+    position: relative !important;
+  }
+  
+  #wc-footer {
+    bottom: auto !important;
+    width: 100% !important;
+  }
+  
+  #dialog-join {
+    width: 100% !important;
+  }
+  
+  #sv-active-video, .active-main, #sv-active-speaker-view, .main-layout {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  
+  .suspension-window {
+    transform: translate(-444px, 10px) !important;
+  } */
+
+.Eventdiv {
+  /* margin: 5% auto; */
+  padding: 80px 0;
+  text-align: center;
+}
+.Eventdiv input {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  /* width: 250px; */
+  border-radius: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 6px 8px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+}
+.Eventdiv select option {
+  color: black;
+}
+
+.Eventdiv select {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 10px 15px;
+  /* margin: 10px auto 10px auto; */
+  /* display: block; */
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+}
+.Eventdiv .EventForm2 ul {
+  display: block;
+}
+.Eventdiv label {
+  width: 150px;
+  border-radius: 3px;
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  /* display:flex; */
+  padding: 6px 8px;
+  margin: 0 auto 10px auto;
+  cursor: pointer;
+  /* display: block; */
+}
+.Eventdiv ul {
+  list-style: none;
+  /* background-color: red; */
+  display: inline-flex;
+  /* margin: 0 auto; */
+  /* padding: 20px 25px; */
+}
+.Eventdiv li {
+  /* display: block; */
+  /* padding: 20px 25px; */
+}
+.Eventdiv input[type='radio'] {
+  visibility: hidden;
+}
+
+.Eventdiv input[type='radio']:checked + label {
+  background: rgba(151, 107, 107, 0.4);
+}
+
+/* AgentFOrm */
+.Agnt input {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  /* width: 250px; */
+  border-radius: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 6px 8px;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  color: white;
+  font-weight: 300;
+}
+
+
+
+.Agnt button {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: white;
+  /* width: 250px; */
+  border-radius: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 6px 8px;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  color: black;
+  font-weight: 300;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 300;
+  /* background: #50a3a2; */
+  background-color: #d3e0ea;
+  width: 100%;
+  height: 100%;
+}
+
+/* .container {
+  margin: 10% auto;
+  padding: 80px 0;
+  text-align: center;
+} */
+
+.container h1 {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+/* .container input {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+} */
+
+/* .container select {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+}
+.container label {
+  width: 250px;
+  border-radius: 3px;
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  display: flex;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  cursor: pointer;
+  display: block;
+}
+.container ul {
+  list-style: none;
+}
+.container li {
+  display: block;
+}
+.container input[type='radio'] {
+  visibility: hidden;
+}
+
+.container input[type='radio']:checked + label {
+  background: rgba(151, 107, 107, 0.4);
+} */
+/* .inpu{
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align:center;
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+} */
+
+.HalfCustom {
+  width: 125px;
+  display: inline;
+}
+button {
+  appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: #50a3a2;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 18px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+.flex-item-left {
+  /* background-color: dodgerblue; */
+  padding: 10px;
+  flex: 33%;
+}
+.flex-item-center {
+  /* background-color: dodgerblue; */
+  padding: 10px;
+  flex: 33%;
+}
+
+.flex-item-right {
+  /* background-color: dodgerblue; */
+  padding: 10px;
+  flex: 33%;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #72ad90;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.details
+{
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right,
+  .flex-item-left,
+  .flex-item-center {
+    flex: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+
+  .sidebar{
+    display: none;
+  }
+
+  .mobileSidebar{
+    display: block;
+  }
+
+  .FluidStyle input
+  {
+    margin-left: 6rem;
+  }
+
+  .FluidStyle select
+   {
+    margin-left: 6rem;
+   }
+  .FluidStyle 
+  {
+    text-align: left;
+    margin-left: 6rem;
+  }
+
+  .FluidStyle h1,a,p
+  {
+    padding-left: 6rem;
+  }
+
+  .FluidStyle .radios
+  {
+    margin-left: 6rem;
+  }
+
+  .FluidStyle button
+  {
+    margin-left: 6rem;
+  }
+
+  .container 
+  {
+    text-align: left;
+  }
+
+  .yo
+  {
+    max-width: 450px;
+    margin-left: 0;
+  }
+
+  .tabler
+  {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  div.content
+  {
+    margin-left: 0;
+  }
+
+  .details
+  {
+    margin-left: 2rem ;
+    max-width: 400px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 802px) {
+
+  .mobileEvent{
+    margin-left: 180px;
+  }
+
+  .mobileSidebar{
+    display: none;
+  }
+
+  .addAgent
+  {
+    margin-left: 100px;
+  }
+}
+
+
+.SumitButton{
+  color: white;
+  background:#413c69;
+}
+
+body {
+  overflow: scroll;
+}
